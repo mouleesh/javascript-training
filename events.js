@@ -47,5 +47,35 @@ function handleMouseEnter(){
   document.getElementById('list').addEventListener('click', function(e) {
     console.log(`You clicked on item: ${e.target.innerHTML}`);
   });
+
+
+
+  //The below HTMLs are required for the above js to work.
+
   
+
   
+// <div style="background:blue; width:50px; height:50px; margin-bottom:10px"
+//      onmouseenter="handleMouseEnter()" 
+//      onmouseout="handleMouseOut()"
+//      onmousemove="handleMouseMove(event)"
+//      onclick="handleBlueBoxClick()"
+//      ondblclick="handleDoubleClick()">
+// </div>
+
+// <input oninput="handleUserInput(event)"/>
+
+// <!-- Bubbling -->
+// <div style="width:150px; height:30px; background:green; margin-top:10px; padding: 5px 0px 0px 5px;" onclick="divClicked()">
+//   <button onclick="buttonClicked(event)">Bubble Button</button>
+// </div>
+
+// <div id="parent-div" style="width:150px; height:30px; background:olive; margin-top:10px; padding: 5px 0px 0px 5px;">
+//   <button id="child-button">Capturing Button</button>
+// </div>
+
+
+// <ul id="list">
+//   <li>1</li>
+//   <li>2</li>
+// </ul>
